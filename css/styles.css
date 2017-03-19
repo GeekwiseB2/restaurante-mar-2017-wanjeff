@@ -1,0 +1,144 @@
+/*==========FONTS==========*/
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/*==========UNIVERSALS==========*/
+.lobster-text {
+  font-family: 'Lobster', cursive;
+  font-size: 55px;
+}
+.raleway-text {
+  font-family: 'raleway' sans-serif;
+}
+.orange-text {
+  color: #F8512F;
+}
+.white-text {
+  color: #FFF;
+}
+.decoration {
+  text-decoration: none;
+}
+/*========== HEADER ==========*/
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus .navbar-default .navbar-nav>li>a:hoover{
+  color: #fff;
+  background-color:
+}
+
+
+
+/*========== CAROUSEL ==========*/
+.item {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.item .btn-warning {
+  background-color: #F8512F;
+  border-color: #F8512F;
+}
+#wood-background {
+  background-image: url('../img/wood-2.jpg');
+}
+
+#main-logo {
+  width: 300px;
+  transform:translate(0,50%);
+}
+#seatin-background {
+  background-image: url('../img/restaurant-2.jpg');
+}
+#farm-background {
+  background-image: url('../img/farm-2.jpg');
+}
+
+/*========== OUR STORY ==========*/
+.year-text {
+    font-family: 'playfair display', serif;
+    position: absolute;
+    font-size: 200px;
+    z-index: -1;
+    color: rgba(150, 150, 150, 0.5);
+}
+#our-story-heading {
+  font-size: 60px;
+  text-shadow: 2px 2px #a6a6a6;
+}
+
+/*========== Food Review ==========*/
+#review {
+  background-image: url('../img/food_review.jpg');
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+.review-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  border:   5px;
+  transform: translateY(50%);
+  margin-top: 0.5%;
+  border-radius: 5px;
+}
+#review h1 {
+  font-size: 5em;
+  text-shadow: 2px 2px #000;
+}
+
+#review p {
+  color: #fff;
+  font-size: 24px;
+}
+/*========== MENU ==========*/
+.nav nav-tabs nav-justified {
+  width: auto;
+}
+#menu {
+  background-image: url('../img/black_linen.png');
+  min-height: 500px;
+}
+.menu-item {
+  background-color: #fff;
+  padding: 12px 12px;
+}
+#menu img {
+  width: 100%;
+}
+.tab-content {
+  margin-left: 15px;
+}
+/*==========CONTACT US==========*/
+#contact {
+  background-color: #F8512F;
+}
+#map {
+  width: 400px;
+  height: 300px;
+}
+.required {
+  color: red;
+}
+.field-long {
+  width: 300px;
+}
+.container1 {
+  width: 320px;
+  background-color: #ff6600;
+  align-content: center;
+}
+.form-style-1 {
+  padding-left: 10px;
+}
+.center {
+  margin-left: 30%;
+  color: #000;
+}
+/*==========UNIVERSALS==========*/
