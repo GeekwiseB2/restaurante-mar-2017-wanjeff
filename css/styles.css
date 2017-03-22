@@ -16,9 +16,7 @@
 .white-text {
   color: #FFF;
 }
-.decoration {
-  text-decoration: none;
-}
+
 /*========== HEADER ==========*/
 .navbar-default {
   background-color: transparent;
@@ -29,11 +27,14 @@
 .navbar-default .navbar-nav>li>a {
   color: #fff;
 }
-.navbar-default .navbar-nav>li>a:focus .navbar-default .navbar-nav>li>a:hoover{
+.navbar-nav>li>a:hoover{
   color: #fff;
-  background-color:
+  background-color: grey;
 }
-
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 /*========== CAROUSEL ==========*/
@@ -98,12 +99,12 @@
   font-size: 24px;
 }
 /*========== MENU ==========*/
-.nav nav-tabs nav-justified {
+.#menu-nav {
   width: auto;
 }
 #menu {
   background-image: url('../img/black_linen.png');
-  min-height: 500px;
+  min-height: 650px;
 }
 .menu-item {
   background-color: #fff;
@@ -112,16 +113,12 @@
 #menu img {
   width: 100%;
 }
-.tab-content {
-  margin-left: 15px;
+#menu h1 {
+  font-size: 6em;
 }
 /*==========CONTACT US==========*/
 #contact {
   background-color: #F8512F;
-}
-#map {
-  width: 400px;
-  height: 300px;
 }
 .required {
   color: red;
@@ -140,5 +137,13 @@
 .center {
   margin-left: 30%;
   color: #000;
+}
+.nav-tabs>li>a:hover, .nav>li>a:focus, .nav>li>a:hover {
+  background-color: transparent;
+  border-color: #F8512F;
+  color: #F8512F;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: #F8512F;
 }
 /*==========UNIVERSALS==========*/

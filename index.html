@@ -12,7 +12,7 @@
 
 <!-- NAVBAR	begins here -->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+  <div class="container-fluid" id="home">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -21,7 +21,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#home">
 				<img src="img/name-01.png" alt="Restaurante logo" class="img-repsonsive">
 			</a>
     </div>
@@ -29,11 +29,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Our Story</a></li>
-				<li><a href="#">Review</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Contact Us</a></li>
+				<li><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="#our-story-heading">Our Story<span class="sr-only">(current)</span></a></li>
+				<li><a href="#review">Review<span class="sr-only">(current)</span></a></li>
+				<li><a href="#menu">Menu<span class="sr-only">(current)</span></a></li>
+				<li><a href="#contact">Contact Us<span class="sr-only">(current)</span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -85,7 +85,7 @@
 <!-- OUR STORY starts here -->
 <div class="container">
 	<div class="row">
-		<div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2"> <!-- Our Story Heading -->
+		<div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-2"> <!-- Our Story Heading -->
 				<h1 class="text-capitalize lobster-text orange-text" id="our-story-heading">Our Story</h1>
 				<h3 class="raleway-text "><strong>	One man. One Dream</strong></h3>
 		</div>
@@ -118,41 +118,38 @@
 		<div class="col-sm-8 col-sm-offset-2">
 			<h1 class="lobster-text white-text text-center">Menu</h1>
 				  <!-- Nav tabs -->
-		  <ul class="nav nav-tabs nav-justified" role="tablist">
-		    <li role="presentation" class="active"><a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">Appetizers</a></li>
-		    <li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab">Lunch</a></li>
-		    <li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab">Dinner</a></li>
-		    <li role="presentation"><a href="#desert" aria-controls="desert" role="tab" data-toggle="tab">Desert</a></li>
+		  <ul class="nav nav-tabs nav-justified" role="tablist" id="menu-nav">
+		    <li role="presentation" class="active"><a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab" class="text-uppercase orange-text">Appetizers</a></li>
+		    <li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab" class="text-uppercase orange-text">Lunch</a></li>
+		    <li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab" class="text-uppercase orange-text">Dinner</a></li>
+		    <li role="presentation"><a href="#desert" aria-controls="desert" role="tab" data-toggle="tab" class="text-uppercase orange-text">Desserts</a></li>
 		  </ul>
 
 		  <!-- Tab panes -->
 		  <div class="tab-content">
 		    <div role="tabpanel" class="tab-pane active fade in" id="appetizers">
-					<div class="row">
 						<div class="col-sm-3 col-xs-6 menu-item">
-							<img src="img/dip.jpg" alt="spinich dip" class="img-thumbnail" />
+							<img src="img/dip.jpg" alt="spinich dip" class="img-thumbnail"/>
 							<h3 class="text-center">Crostinis</h3>
 								<p class="text-justify">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, temporibus quos aut libero error doloribus deserunt dolores quisquam fugiat recusandae quo cupiditate laudantium a.</p>
 						</div>
 						<div class="col-sm-3 col-xs-6 menu-item">
-							<img src="img/eggplant.jpg" alt="eggplant" class="img-thumbnail" />
+							<img src="img/eggplant.jpg" alt="eggplant" class="img-thumbnail"/>
 							<h3 class="text-center">Eggplant</h3>
 								<p class="text-justify">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, temporibus quos aut libero error doloribus deserunt dolores quisquam fugiat recusandae quo cupiditate laudantium a.</p>
 						</div>
 						<div class="col-sm-3 col-xs-6 menu-item">
-							<img src="img/meat.jpg" alt="roll-ups" class="img-thumbnail" />
+							<img src="img/meat.jpg" alt="roll-ups" class="img-thumbnail"/>
 							<h3 class="text-center">Roll-Ups</h3>
 								<p class="text-justify">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, temporibus quos aut libero error doloribus deserunt dolores quisquam fugiat recusandae quo cupiditate laudantium a.</p>
 						</div>
 						<div class="col-sm-3 col-xs-6 menu-item">
-							<img src="img/bruschetta.jpg" alt="bruschetta" class="img-thumbnail" />
+							<img src="img/bruschetta.jpg" alt="bruschetta" class="img-thumbnail"/>
 							<h3 class="text-center">Bruschetta</h3>
 								<p class="text-justify">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, temporibus quos aut libero error doloribus deserunt dolores quisquam fugiat recusandae quo cupiditate laudantium a.</p>
 						</div>
-					</div>
 		    </div>
 		    <div role="tabpanel" class="tab-pane fade" id="lunch">
-					<div class="row">
 						<div class="col-sm-3 col-xs-6 menu-item">
 							<img src="img/eggplant.jpg" alt="eggplant" class="img-thumbnail" />
 							<h3 class="text-center">Eggplant</h3>
@@ -173,10 +170,8 @@
 							<h3 class="text-center">Crostinis</h3>
 								<p class="text-justify">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, temporibus quos aut libero error doloribus deserunt dolores quisquam fugiat recusandae quo cupiditate laudantium a.</p>
 						</div>
-					</div>
 		    </div>
 		    <div role="tabpanel" class="tab-pane fade" id="dinner">
-					<div class="row">
 						<div class="col-sm-3 col-xs-6 menu-item">
 							<img src="img/meat.jpg" alt="roll-ups" class="img-thumbnail" />
 							<h3 class="text-center">Roll-Ups</h3>
@@ -197,10 +192,8 @@
 							<h3 class="text-center">Eggplant</h3>
 								<p class="text-justify">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, temporibus quos aut libero error doloribus deserunt dolores quisquam fugiat recusandae quo cupiditate laudantium a.</p>
 						</div>
-					</div>
 		    </div>
 		    <div role="tabpanel" class="tab-pane fade" id="desert">
-					<div class="row">
 						<div class="col-sm-3 col-xs-6 menu-item">
 							<img src="img/bruschetta.jpg" alt="bruschetta" class="img-thumbnail" />
 							<h3 class="text-center">Bruschetta</h3>
@@ -221,12 +214,8 @@
 							<h3 class="text-center">Eggplant</h3>
 								<p class="text-justify">	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, temporibus quos aut libero error doloribus deserunt dolores quisquam fugiat recusandae quo cupiditate laudantium a.</p>
 						</div>
-					</div>
 		    </div>
 			</div>
-					<br>
-					<br>
-					<br>
 		</div>
 	</div>
 <p> </p>
@@ -236,52 +225,54 @@
 <!-- MENU ENDS here -->
 <!-- CONTACT US starts here -->
 <div class="container-fluid white-text" id="contact">
-	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2">
-			<h1 class="raleway-text" "pull-right">Contact Us</h1>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium numquam, facere corporis mollitia, porro, libero explicabo eaque, voluptate optio quasi est! Officiis impedit maxime similique quis ab sit delectus vitae!
-						<br>
-						<br>
-						<br>
-			<div class="row">
-					<div class="col-sm-4">
-						<form class="container1">
-							<ul style="list-style:none" class="form-style-1">
-								<li><label>Name:<span class="required">*</span></label><br>
-									<input type="text" name="field1" class="field-long" /></li>
-								<li>
-										<label>E-Mail:<span class="required">*</span></label><br>
-										<input type="email" name="field2" class="field-long" />
-								</li>
-								<li>
-										<label>Subject:</label><br>
-										<input type="email" name="field3" class="field-long" />
-								</li>
-								<li>
-										<label>Message:<span class="required">*</span></label><br>
-										<textarea name="field5" id="field4" class="field-long field-textarea"></textarea>
-								</li>
-									<form action="?" method="POST">
-										<div class="g-recaptcha" data-sitekey="your_site_key"></div>
-									</form>
-										<li style="list-style:none">
-											<input class="center" type="submit" value="Send Massage" />
-										</li>
-										<li class="text-center">All fields marked with a&nbsp<span class="required">*</span>&nbspare required.</li>
-							</ul>
-						</form>
-				</div>
-					<div class="col-sm-4 col-sm-offset-2">
-						<ul style="list-style:none">
-							<li><strong>RESTAURANTE</strong></li>
-							<li>123 Fulton St.</li>
-							<li>Fresno, CA 93728</li>
-							<li>P: (123) 456-7890 </li>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="raleway-text" "pull-right">Contact Us</h1>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium numquam, facere corporis mollitia, porro, libero explicabo eaque, voluptate optio quasi est! Officiis impedit maxime similique quis ab sit delectus vitae!
 							<br>
-							<li><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12790.416957247213!2d-119.785777!3d36.732065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1489965472915" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-							</li>
-						</ul>
+							<br>
+							<br>
+				<div class="row">
+						<div class="col-sm-6">
+							<form class="container1">
+								<ul style="list-style:none" class="form-style-1">
+									<li><label>Name:<span class="required">*</span></label><br>
+										<input type="text" name="field1" class="field-long" /></li>
+									<li>
+											<label>E-Mail:<span class="required">*</span></label><br>
+											<input type="email" name="field2" class="field-long" />
+									</li>
+									<li>
+											<label>Subject:</label><br>
+											<input type="email" name="field3" class="field-long" />
+									</li>
+									<li>
+											<label>Message:<span class="required">*</span></label><br>
+											<textarea name="field5" id="field4" class="field-long field-textarea"></textarea>
+									</li>
+										<form action="?" method="POST">
+											<div class="g-recaptcha" data-sitekey="your_site_key"></div>
+										</form>
+											<li style="list-style:none">
+												<input class="center" type="submit" value="Send Massage" />
+											</li>
+											<li class="text-center">All fields marked with a&nbsp<span class="required">*</span>&nbspare required.</li>
+								</ul>
+							</form>
 					</div>
+						<div class="col-sm-6">
+							<ul style="list-style:none">
+								<li><strong>RESTAURANTE</strong></li>
+								<li>123 Fulton St.</li>
+								<li>Fresno, CA 93728</li>
+								<li>P: (123) 456-7890 </li>
+								<br>
+								<li><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12790.416957247213!2d-119.785777!3d36.732065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1489965472915" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</li>
+							</ul>
+						</div>
+				</div>
 			</div>
 		</div>
 	</div>
